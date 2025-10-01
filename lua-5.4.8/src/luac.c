@@ -4,6 +4,8 @@
 ** See Copyright Notice in lua.h
 */
 
+#ifndef ARDUINO
+
 #define luac_c
 #define LUA_CORE
 
@@ -721,3 +723,5 @@ static void PrintFunction(const Proto* f, int full)
  if (full) PrintDebug(f);
  for (i=0; i<n; i++) PrintFunction(f->p[i],full);
 }
+
+#endif

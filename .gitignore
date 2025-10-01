@@ -36,3 +36,4 @@ lua-5.4.8/src/lundump.o
 lua-5.4.8/src/lutf8lib.o
 lua-5.4.8/src/lvm.o
 lua-5.4.8/src/lzio.o
+luac.out

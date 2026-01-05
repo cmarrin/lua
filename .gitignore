@@ -37,3 +37,5 @@ lua-5.4.8/src/lutf8lib.o
 lua-5.4.8/src/lvm.o
 lua-5.4.8/src/lzio.o
 luac.out
+lua-5.4.8/mac/lua.xcodeproj/project.xcworkspace/xcuserdata/cmarrin.xcuserdatad
+lua-5.4.8/mac/lua.xcodeproj/xcuserdata/cmarrin.xcuserdatad

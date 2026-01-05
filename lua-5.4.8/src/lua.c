@@ -4,6 +4,8 @@
 ** See Copyright Notice in lua.h
 */
 
+#ifndef ARDUINO
+
 #define lua_c
 
 #include "lprefix.h"
@@ -685,3 +687,4 @@ int main (int argc, char **argv) {
   return (result && status == LUA_OK) ? EXIT_SUCCESS : EXIT_FAILURE;
 }
 
+#endif

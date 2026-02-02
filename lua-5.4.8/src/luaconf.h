@@ -29,8 +29,9 @@
 */
 
 // CFM - print customization
-#define lua_writestring(s,l)   fwrite((s), sizeof(char), (l), stdout)
-#define lua_writeline()        (lua_writestring("\n", 1), fflush(stdout))
+extern void printLua(const char* s, size_t l);
+#define lua_writestring(s,l)   (printLua((s),(l)))
+#define lua_writeline()        (printLua("\n", 1))
 
 /*
 ** {====================================================================

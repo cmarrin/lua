@@ -28,6 +28,9 @@
 ** ===================================================================
 */
 
+// CFM - print customization
+#define lua_writestring(s,l)   fwrite((s), sizeof(char), (l), stdout)
+#define lua_writeline()        (lua_writestring("\n", 1), fflush(stdout))
 
 /*
 ** {====================================================================

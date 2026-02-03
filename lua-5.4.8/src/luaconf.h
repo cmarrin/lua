@@ -28,11 +28,6 @@
 ** ===================================================================
 */
 
-// CFM - print customization
-extern void printLua(const char* s, size_t l);
-#define lua_writestring(s,l)   (printLua((s),(l)))
-#define lua_writeline()        (printLua("\n", 1))
-
 /*
 ** {====================================================================
 ** System Configuration: macros to adapt (if needed) Lua to some

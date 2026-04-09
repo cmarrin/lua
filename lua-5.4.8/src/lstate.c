@@ -368,6 +368,7 @@ LUA_API lua_State *lua_newstate (lua_Alloc f, void *ud) {
   if (l == NULL) return NULL;
   L = &l->l.l;
   g = &l->g;
+  L->stop = 0;
   L->tt = LUA_VTHREAD;
   g->currentwhite = bitmask(WHITE0BIT);
   L->marked = luaC_white(g);
@@ -413,6 +414,10 @@ LUA_API lua_State *lua_newstate (lua_Alloc f, void *ud) {
     L = NULL;
   }
   return L;
+}
+
+LUA_API void lua_stop (lua_State *L) {
+    L->stop = 1;
 }
 
 
